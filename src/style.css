@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
 main {  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0.9fr 1.1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "chracter dressupbattle dressupbattle dressupbattle"
-    "chracter dressupbattle dressupbattle dressupbattle"
-    "chracter dressupbattle dressupbattle dressupbattle"
-    "chracter clothingloot clothingloot clothingloot";
+    "character dressbattle dressbattle dressbattle"
+    "character dressbattle dressbattle dressbattle"
+    "character dressbattle dressbattle dressbattle"
+    "characterloots characterloots characterloots characterloots";
 }
 
-.clothingloot { grid-area: clothingloot; }
+.character { grid-area: character;
+  background-image: url("/src/images/pastel-green-to-blue-gradient.png");
+  ; }
 
-.chracter { grid-area: chracter; }
+.characterloots { grid-area: characterloots; 
+  background-image: url("/src/images/pastel-green-to-blue-gradient.png");
+  background-size: cover;}
 
-.dressupbattle { grid-area: dressupbattle; }
-
-
-.clothing loot { grid-area: clothing loot; }
-
-.chracter { grid-area: chracter; }
-
-.dress up battle { grid-area: dress up battle; }
+.dressbattle { grid-area: dressbattle; 
+background-image: url("/src/images/dti\ runway.webp");
+background-size: cover;}
